@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 3243.21 1580.95" width="3243.2099609375" height="1580.949951171875">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #d44d22;
+        stroke-linecap: square;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 70px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #38c217;
+      }
+
+      .cls-4 {
+        stroke: #f1f5f0;
+        stroke-width: 60px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="1329.33" y="674.65" width="1374.5" height="773.15"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <polyline class="cls-4" points="1475.13 1087.79 1465.46 903.34 2010.22 874.79 2019.89 1059.24"/>
+    <path class="cls-3" d="M2237.34,1073.59c10.49,119.93-78.23,225.66-198.16,236.16-119.93,10.49-225.66-78.23-236.16-198.16"/>
+    <line class="cls-2" x1="2273.58" y1="1069.82" x2="36.93" y2="1196.92"/>
+  </g>
+</svg>

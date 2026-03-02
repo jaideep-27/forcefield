@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 535 618.78" width="535" height="618.780029296875">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-3);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" y="87.13" width="500" height="500"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <polygon class="cls-3" points="146.68 293.14 160.24 292.43 159.89 285.65 146.32 286.36 145.06 262.24 169.57 272.12 168.73 256.14 123.3 258.52 127.11 331.17 148.61 330.04 146.68 293.14 146.68 293.14"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="35" width="500" height="500"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <polygon class="cls-2" points="201.17 288.93 214.73 288.22 214.38 281.44 200.82 282.15 199.55 258.03 224.06 267.91 223.23 251.93 177.8 254.31 181.6 326.96 203.11 325.84 201.17 288.93 201.17 288.93"/>
+    </clipPath>
+  </defs>
+  <g class="cls-4">
+    <rect x="120.37" y="253.98" width="52.13" height="79.35" transform="translate(-15.17 8.07) rotate(-3)"/>
+  </g>
+  <g class="cls-5">
+    <rect x="174.86" y="249.77" width="52.13" height="79.35" transform="translate(-14.87 10.91) rotate(-3)"/>
+  </g>
+</svg>

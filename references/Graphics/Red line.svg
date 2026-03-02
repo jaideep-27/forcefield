@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 3587.92 1604.27" width="3587.919921875" height="1604.27001953125">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d44d22;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 70px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="1860.35" y1="1078.71" x2="36.73" y2="1171.41"/>
+</svg>

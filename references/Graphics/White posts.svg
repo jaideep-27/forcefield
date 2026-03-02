@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 2781.3 1604.27" width="2781.300048828125" height="1604.27001953125">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-linecap: square;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #f1f5f0;
+        stroke-miterlimit: 10;
+        stroke-width: 60px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" y="664.68" width="1521.03" height="799.18"/>
+    </clipPath>
+  </defs>
+  <g class="cls-4">
+    <polyline class="cls-3" points="161.34 1091.72 150.65 901.07 753.48 871.56 764.17 1062.21"/>
+  </g>
+  <path class="cls-2" d="M125.61,506.48l28.38,424.64M722.78,391.89l28.38,424.64"/>
+</svg>

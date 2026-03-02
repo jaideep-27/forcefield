@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 2687.62 1604.27" width="2687.6201171875" height="1604.27001953125">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #38c217;
+        stroke-miterlimit: 10;
+        stroke-width: 70px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M766.27,1072.23c16.77,191.63-124.99,360.56-316.62,377.33-191.63,16.77-360.56-124.99-377.33-316.62"/>
+</svg>
