@@ -11,12 +11,24 @@
 
 /* ── Brand CSS Variables ───────────────────────── */
 :root {
+  /* Blue primary palette */
   --brand-blue: #238ad5;
-  --brand-red: #d64d21;
-  --brand-green: #39c317;
-  --brand-white: #f1f6f0;
-  --brand-dark: #0d1f3c;
-  /* Kept for dark sections, but using brand blue as primary */
+  --brand-blue-dark: #0d1f3c;
+  --brand-blue-mid: #1a78c2;
+  --brand-blue-light: #42a5f5;
+
+  /* Neutrals */
+  --brand-bg: #f1f6f0;
+  --brand-text: #1F2933;
+
+  /* Semantic */
+  --brand-error: #D64545;
+  --brand-warning: #F6A623;
+  --brand-success: #2E8540;
+
+  /* Disabled */
+  --brand-disabled-bg: #C7D2D9;
+  --brand-disabled-text: #7B8794;
 
   /* Font stacks */
   --font-heading: "Ergon Trial", "Poppins", sans-serif;
@@ -140,6 +152,12 @@
     --default-mono-font-feature-settings: var(--font-mono--font-feature-settings);
     --default-mono-font-variation-settings: var(--font-mono--font-variation-settings);
   }
+}
+
+/* ── Sonner toast description override ── */
+[data-sonner-toast] [data-description] {
+  color: #000000 !important;
+  opacity: 1 !important;
 }
 
 @layer base {
@@ -1820,57 +1838,56 @@
 
 :root {
   --font-size: 16px;
-  --font-heading: "Ergon", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: "Ergon Trial", "Poppins", sans-serif;
   --font-body: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
   --background: #f1f6f0;
-  --foreground: #1f2933;
+  --foreground: #1F2933;
   --card: #fff;
-  --card-foreground: #1f2933;
+  --card-foreground: #1F2933;
   --popover: #fff;
-  --popover-foreground: #1f2933;
+  --popover-foreground: #1F2933;
   --primary: #238ad5;
   --primary-foreground: #fff;
   --secondary: #e3f2fd;
-  --secondary-foreground: #238ad5;
+  --secondary-foreground: #0d1f3c;
   --muted: #e3f2fd;
   --muted-foreground: #4b5563;
-  --accent: #1976d2;
+  --accent: #1a78c2;
   --accent-foreground: #fff;
-  --destructive: #d64545;
+  --destructive: #D64545;
   --destructive-foreground: #fff;
   --border: #0000001a;
   --input: transparent;
-  --input-background: #fff;
-  --switch-background: #c7d2d9;
+  --input-background: #f1f6f0;
+  --switch-background: #C7D2D9;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   --ring: #238ad5;
   --chart-1: #238ad5;
   --chart-2: #42a5f5;
-  --chart-3: #1976d2;
-  --chart-4: #238ad5;
-  --chart-5: #2e8540;
+  --chart-3: #1a78c2;
+  --chart-4: #0d1f3c;
+  --chart-5: #2E8540;
   --radius: .75rem;
   --sidebar: #f1f6f0;
-  --sidebar-foreground: #1f2933;
+  --sidebar-foreground: #1F2933;
   --sidebar-primary: #238ad5;
   --sidebar-primary-foreground: #fff;
   --sidebar-accent: #e3f2fd;
-  --sidebar-accent-foreground: #238ad5;
+  --sidebar-accent-foreground: #0d1f3c;
   --sidebar-border: #0000001a;
   --sidebar-ring: #238ad5;
-  --blue-primary: #238ad5;
-  --blue-dark: #0d1f3c;
-  --blue-mid: #1976d2;
-  --blue-light: #42a5f5;
-  --blue-bg: #e3f2fd;
-  --white-primary: #f1f6f0;
-  --neutral-dark: #1f2933;
+  --brand-blue: #238ad5;
+  --brand-blue-dark: #0d1f3c;
+  --brand-blue-mid: #1a78c2;
+  --brand-blue-light: #42a5f5;
+  --brand-white: #f1f6f0;
+  --neutral-dark: #1F2933;
   --neutral-medium: #4b5563;
-  --neutral-disabled: #7b8794;
-  --success: #2e8540;
-  --warning: #f6a623;
-  --error: #d64545;
+  --neutral-disabled: #7B8794;
+  --success: #2E8540;
+  --warning: #F6A623;
+  --error: #D64545;
 }
 
 .dark {

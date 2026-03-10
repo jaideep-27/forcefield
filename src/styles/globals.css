@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-  font-family: 'Ergon';
-  src: url('https://fonts.cdnfonts.com/css/ergon') format('woff2');
+  font-family: 'Ergon Trial';
+  src: local('Ergon Trial Medium'), local('ErgonTrial-Medium');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 :root {
   --font-size: 16px;
-  --font-heading: 'Ergon', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Ergon Trial', 'Poppins', sans-serif;
   --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
   --background: #f1f6f0;
   --foreground: #1F2933;
@@ -22,43 +22,42 @@
   --popover-foreground: #1F2933;
   --primary: #238ad5;
   --primary-foreground: #ffffff;
-  --secondary: #E3F2FD;
-  --secondary-foreground: #1565C0;
-  --muted: #E3F2FD;
+  --secondary: #e3f2fd;
+  --secondary-foreground: #0d1f3c;
+  --muted: #e3f2fd;
   --muted-foreground: #4B5563;
-  --accent: #1976D2;
+  --accent: #1a78c2;
   --accent-foreground: #ffffff;
   --destructive: #D64545;
   --destructive-foreground: #ffffff;
   --border: rgba(0, 0, 0, 0.1);
   --input: transparent;
-  --input-background: #ffffff;
+  --input-background: #f1f6f0;
   --switch-background: #C7D2D9;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   --ring: #238ad5;
   --chart-1: #238ad5;
-  --chart-2: #42A5F5;
-  --chart-3: #1976D2;
-  --chart-4: #1565C0;
+  --chart-2: #42a5f5;
+  --chart-3: #1a78c2;
+  --chart-4: #0d1f3c;
   --chart-5: #2E8540;
   --radius: 0.75rem;
   --sidebar: #f1f6f0;
   --sidebar-foreground: #1F2933;
   --sidebar-primary: #238ad5;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #E3F2FD;
-  --sidebar-accent-foreground: #1565C0;
+  --sidebar-accent: #e3f2fd;
+  --sidebar-accent-foreground: #0d1f3c;
   --sidebar-border: rgba(0, 0, 0, 0.1);
   --sidebar-ring: #238ad5;
 
   /* Brand Colors */
-  --blue-primary: #238ad5;
-  --blue-dark: #0d1f3c;
-  --blue-mid: #238ad5;
-  --blue-light: #238ad5;
-  --blue-bg: #f1f6f0;
-  --white-primary: #f1f6f0;
+  --brand-blue: #238ad5;
+  --brand-blue-dark: #0d1f3c;
+  --brand-blue-mid: #1a78c2;
+  --brand-blue-light: #42a5f5;
+  --brand-white: #f1f6f0;
   --neutral-dark: #1F2933;
   --neutral-medium: #4B5563;
   --neutral-disabled: #7B8794;
