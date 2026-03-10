@@ -9,15 +9,12 @@ export function Footer() {
 
   return (
     <footer style={{ background: "#238ad5", position: "relative", overflow: "hidden" }}>
-      {/* Blue top border */}
-      <div style={{ height: 3, background: "linear-gradient(90deg, #f1f6f0 0%, #e3f2fd 33%, #42a5f5 66%, rgba(255,255,255,0.3) 100%)" }} />
-
       <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,255,255,0.07), transparent 70%)", pointerEvents: "none" }} />
 
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "60px 24px 32px", position: "relative", zIndex: 2 }}>
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 40, marginBottom: 48 }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5" style={{ gap: 40, marginBottom: 48 }}>
           {/* Brand */}
-          <div>
+          <div className="lg:col-span-2 sm:col-span-2 lg:pr-12">
             <div style={{ marginBottom: 20 }}>
               <img src="/brand/logo/FF_Logo_White.png" alt="ForceField" style={{ height: 76, width: "auto", objectFit: "contain" }} />
             </div>

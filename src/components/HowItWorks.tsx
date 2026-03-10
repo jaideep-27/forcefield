@@ -75,7 +75,7 @@ export function HowItWorks() {
           </div>
         </motion.div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4" style={{ gap: 24 }}>
           {steps.map((step, i) => (
             <motion.div
               key={i}

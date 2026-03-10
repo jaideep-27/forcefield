@@ -49,7 +49,7 @@ export function NewsletterSection() {
           </p>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} style={{ display: "flex", gap: 10, maxWidth: 460, margin: "0 auto 14px", flexWrap: "wrap" }}>
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row" style={{ gap: 10, maxWidth: 460, margin: "0 auto 14px" }}>
             <input
               type="email" required placeholder="Enter your email address" value={email}
               onChange={(e) => setEmail(e.target.value)} disabled={isSubmitting}

@@ -37,7 +37,7 @@ export function HeroSection() {
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(60deg, transparent 65%, rgba(35,138,213,0.05) 100%)", pointerEvents: "none" }} />
 
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "140px 24px 80px", width: "100%", position: "relative", zIndex: 2 }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }} className="lg:grid-cols-2 grid-cols-1">
+        <div style={{ gap: 60, alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
 
           {/* Left content */}
           <div>
@@ -47,7 +47,7 @@ export function HeroSection() {
               style={{ display: "inline-flex", alignItems: "center", gap: 8, marginBottom: 24 }}
             >
               <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "6px 16px", borderRadius: 999, border: "1px solid rgba(255,255,255,0.30)", background: "rgba(255,255,255,0.15)" }}>
-                <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#fff", animation: "pulse 2s infinite", flexShrink: 0 }} />
+                <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#39c317", animation: "pulse 2s infinite", flexShrink: 0 }} />
                 <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(241,246,240,0.9)", fontFamily: "var(--font-body)" }}>
                   Evidence-Based Rugby Training
                 </span>
@@ -57,7 +57,7 @@ export function HeroSection() {
             {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.15 }}
-              style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(42px, 5.5vw, 68px)", lineHeight: 1.05, color: "#ffffff", marginBottom: 24 }}
+              style={{ fontFamily: "var(--font-heading)", fontWeight: 500, fontSize: "clamp(42px, 5.5vw, 68px)", lineHeight: 1.05, color: "#ffffff", marginBottom: 24 }}
             >
               Train Smarter.
               <br />
@@ -175,7 +175,8 @@ export function HeroSection() {
         {/* Stats bar */}
         <motion.div
           initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.8 }}
-          style={{ marginTop: 80, paddingTop: 48, borderTop: "1px solid rgba(255,255,255,0.08)", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24 }}
+          className="grid grid-cols-2 md:grid-cols-4"
+          style={{ marginTop: 80, paddingTop: 48, borderTop: "1px solid rgba(255,255,255,0.08)", gap: 24 }}
         >
           {[
             { value: "500+", label: "Young Players" },

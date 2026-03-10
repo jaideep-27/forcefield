@@ -51,7 +51,8 @@ export function SocialProof() {
 
         {/* Stats row */}
         <motion.div
-          style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16, marginBottom: 64, maxWidth: 800, margin: "0 auto 64px" }}
+          className="grid grid-cols-2 md:grid-cols-4"
+          style={{ gap: 16, marginBottom: 64, maxWidth: 800, margin: "0 auto 64px" }}
           initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
         >
           {stats.map((s, i) => (
@@ -63,7 +64,7 @@ export function SocialProof() {
         </motion.div>
 
         {/* Testimonial cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
+        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: 24 }}>
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
@@ -74,7 +75,7 @@ export function SocialProof() {
               <div style={{ position: "absolute", top: 16, right: 20, fontSize: 80, lineHeight: 1, color: "#238ad5", opacity: 0.07, fontFamily: "Georgia, serif", fontWeight: 700, userSelect: "none" }}>"</div>
               <div style={{ display: "flex", gap: 4 }}>
                 {Array.from({ length: t.rating }).map((_, j) => (
-                  <svg key={j} width="16" height="16" viewBox="0 0 24 24" fill="#f1f6f0" stroke="#f1f6f0" strokeWidth={1}>
+                  <svg key={j} width="16" height="16" viewBox="0 0 24 24" fill="#fbbf24" stroke="#fbbf24" strokeWidth={1}>
                     <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
                   </svg>
                 ))}

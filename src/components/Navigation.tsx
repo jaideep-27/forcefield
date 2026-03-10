@@ -68,7 +68,7 @@ export function Navigation() {
           </button>
 
           {/* Desktop nav links */}
-          <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
+          <div className="hidden md:flex" style={{ alignItems: "center", gap: 32 }}>
             {navLinks.map((link) => (
               <button
                 key={link.id}
@@ -88,7 +88,7 @@ export function Navigation() {
           </div>
 
           {/* Desktop CTAs */}
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div className="hidden md:flex" style={{ alignItems: "center", gap: 12 }}>
             <button
               onClick={handleLogin}
               style={{
@@ -133,7 +133,6 @@ export function Navigation() {
             style={{
               background: "none", border: "none", cursor: "pointer",
               color: "#374151", padding: 4, lineHeight: 0,
-              display: "none", // hidden on desktop; CSS class controls mobile visibility
             }}
             aria-label="Toggle menu"
           >
