@@ -29,6 +29,7 @@ export function SocialProof() {
   return (
     <section
       id="testimonials"
+      className="resp-section-padding"
       style={{ padding: "100px 24px 160px", background: "#238ad5", position: "relative", overflow: "hidden" }}
     >
       <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 15% 75%, rgba(255,255,255,0.08) 0%, transparent 45%), radial-gradient(circle at 85% 25%, rgba(255,255,255,0.05) 0%, transparent 45%)", pointerEvents: "none" }} />
@@ -41,7 +42,7 @@ export function SocialProof() {
           <span style={{ display: "inline-block", fontSize: 12, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.90)", fontFamily: "var(--font-body)", marginBottom: 16 }}>
             Real Results
           </span>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: "#ffffff", lineHeight: 1.15, marginBottom: 16 }}>
+          <h2 className="resp-h2" style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: "#ffffff", lineHeight: 1.15, marginBottom: 16 }}>
             Trusted by Players,<br />Parents &amp; Coaches
           </h2>
           <p style={{ fontSize: 17, color: "rgba(241,246,240,0.65)", fontFamily: "var(--font-body)" }}>
@@ -51,8 +52,8 @@ export function SocialProof() {
 
         {/* Stats row */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4"
-          style={{ gap: 16, marginBottom: 64, maxWidth: 800, margin: "0 auto 64px" }}
+          className="resp-stats-grid"
+          style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16, marginBottom: 64, maxWidth: 800, margin: "0 auto 64px" }}
           initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
         >
           {stats.map((s, i) => (
@@ -64,7 +65,7 @@ export function SocialProof() {
         </motion.div>
 
         {/* Testimonial cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
           {testimonials.map((t, i) => (
             <motion.div
               key={i}

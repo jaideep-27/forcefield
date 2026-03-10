@@ -381,10 +381,10 @@ export function GamePage() {
 
     // ─── GAME SCREEN ──────────────────────────────────────────────────────────
     return (
-        <div className="flex flex-col md:flex-row h-screen" style={{ background: NAVY, fontFamily: "var(--font-body)", overflow: "hidden" }}>
+        <div className="resp-panel-stack" style={{ minHeight: "100vh", background: NAVY, display: "flex", fontFamily: "var(--font-body)", overflow: "hidden" }}>
 
             {/* Canvas area */}
-            <div style={{ flex: 1, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", padding: 24 }}>
+            <div className="resp-panel" style={{ flex: 1, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", padding: 24 }}>
                 <canvas ref={canvasRef} width={640} height={480}
                     style={{ borderRadius: 20, boxShadow: `0 0 60px rgba(35,138,213,0.25), 0 0 0 1px rgba(255,255,255,0.07)`, maxWidth: "100%", maxHeight: "calc(100vh - 80px)" }} />
 
@@ -422,7 +422,7 @@ export function GamePage() {
             </div>
 
             {/* Right sidebar — WHITE panel */}
-            <div className="w-full h-72 md:w-72 md:h-full shrink-0" style={{ background: "#ffffff", borderLeft: "1px solid #e5e7eb", borderTop: "1px solid #e5e7eb", display: "flex", flexDirection: "column", gap: 0, overflowY: "auto" }}>
+            <div className="resp-panel" style={{ width: 288, background: "#ffffff", borderLeft: "1px solid #e5e7eb", display: "flex", flexDirection: "column", gap: 0, overflowY: "auto" }}>
 
                 {/* Header strip */}
                 <div style={{ background: BLUE, padding: "20px 20px 16px" }}>

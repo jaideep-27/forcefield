@@ -48,7 +48,7 @@ export function PricingSection() {
   };
 
   return (
-    <section id="pricing" style={{ padding: "100px 24px 160px", background: "#238ad5", position: "relative", overflow: "hidden" }}>
+    <section id="pricing" className="resp-section-padding" style={{ padding: "100px 24px 160px", background: "#238ad5", position: "relative", overflow: "hidden" }}>
       {/* Subtle dot-grid texture */}
       <div style={{ position: "absolute", inset: 0, backgroundImage: "radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px)", backgroundSize: "32px 32px", pointerEvents: "none" }} />
 
@@ -62,7 +62,7 @@ export function PricingSection() {
           <span style={{ display: "inline-block", fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.75)", fontFamily: "var(--font-body)", marginBottom: 14 }}>
             Pricing
           </span>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(30px, 4vw, 46px)", color: "#ffffff", marginBottom: 16, lineHeight: 1.1 }}>
+          <h2 className="resp-h2" style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(30px, 4vw, 46px)", color: "#ffffff", marginBottom: 16, lineHeight: 1.1 }}>
             Simple, Clear Pricing
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "rgba(255,255,255,0.80)", maxWidth: 420, margin: "0 auto" }}>
@@ -71,7 +71,7 @@ export function PricingSection() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: 28, alignItems: "stretch" }}>
+        <div className="resp-grid-3-to-2 resp-grid-1" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 28, alignItems: "stretch" }}>
           {plans.map((plan, i) => (
             <motion.div
               key={i}

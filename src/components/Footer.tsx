@@ -11,17 +11,17 @@ export function Footer() {
     <footer style={{ background: "#238ad5", position: "relative", overflow: "hidden" }}>
       <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,255,255,0.07), transparent 70%)", pointerEvents: "none" }} />
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "60px 24px 32px", position: "relative", zIndex: 2 }}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5" style={{ gap: 40, marginBottom: 48 }}>
+      <div className="resp-section-padding" style={{ maxWidth: 1200, margin: "0 auto", padding: "60px 24px 32px", position: "relative", zIndex: 2 }}>
+        <div className="resp-footer-grid" style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 40, marginBottom: 48 }}>
           {/* Brand */}
-          <div className="lg:col-span-2 sm:col-span-2 lg:pr-12">
+          <div>
             <div style={{ marginBottom: 20 }}>
               <img src="/brand/logo/FF_Logo_White.png" alt="ForceField" style={{ height: 76, width: "auto", objectFit: "contain" }} />
             </div>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 14, color: "rgba(255,255,255,0.78)", lineHeight: 1.75, maxWidth: 240, marginBottom: 24 }}>
               Evidence-based rugby training for young players aged 8–18, backed by University of Bath research &amp; RFU data.
             </p>
-            <div style={{ display: "flex", gap: 10 }}>
+            <div className="resp-center-flex" style={{ display: "flex", gap: 10 }}>
               {["X", "FB", "IG"].map((s) => (
                 <a
                   key={s} href="#"
@@ -36,7 +36,7 @@ export function Footer() {
           </div>
 
           {cols.map((col) => (
-            <div key={col.heading}>
+            <div key={col.heading} className="resp-footer-col">
               <h4 style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: 13, letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(255,255,255,0.70)", marginBottom: 18 }}>
                 {col.heading}
               </h4>
@@ -58,7 +58,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.14)", paddingTop: 24, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
+        <div className="resp-flex-col-center" style={{ borderTop: "1px solid rgba(255,255,255,0.14)", paddingTop: 24, display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 12 }}>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 13, color: "rgba(255,255,255,0.52)" }}>
             © {currentYear} ForceField Rugby Training. All rights reserved.
           </p>

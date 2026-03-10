@@ -24,11 +24,11 @@ export function LoginPage() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row min-h-screen" style={{ fontFamily: "var(--font-body)" }}>
+    <div className="resp-panel-stack" style={{ minHeight: "100vh", display: "flex", fontFamily: "var(--font-body)" }}>
 
       {/* ── Left panel — brand ── */}
-      <div className="w-full md:w-[45%] md:min-w-[340px]" style={{
-        background: "#238ad5",
+      <div className="resp-panel" style={{
+        width: "45%", minWidth: 340, background: "#238ad5",
         display: "flex", flexDirection: "column", justifyContent: "space-between",
         padding: "48px 52px", position: "relative", overflow: "hidden",
       }}>
@@ -67,7 +67,7 @@ export function LoginPage() {
       </div>
 
       {/* ── Right panel — form ── */}
-      <div style={{
+      <div className="resp-panel" style={{
         flex: 1, background: "#f1f6f0",
         display: "flex", alignItems: "center", justifyContent: "center",
         padding: "48px 40px",

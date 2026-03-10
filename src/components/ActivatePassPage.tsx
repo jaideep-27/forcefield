@@ -131,7 +131,7 @@ export function ActivatePassPage() {
             {/* ── Section 1: Player details ── */}
             <div style={{ padding: "36px 40px", borderBottom: "1px solid #f3f4f6" }}>
               {sectionHeader(1, "Player Details", "Information about the young player")}
-              <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: 16 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <Field label="First name" required>
                   <input placeholder="e.g. Jamie" value={form.playerFirst} onChange={set("playerFirst")} {...inputProps} />
                 </Field>
@@ -156,7 +156,7 @@ export function ActivatePassPage() {
             {/* ── Section 2: Parent / Guardian ── */}
             <div style={{ padding: "36px 40px", borderBottom: "1px solid #f3f4f6" }}>
               {sectionHeader(2, "Parent / Guardian", "Required for players under 18")}
-              <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: 16 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <Field label="First name" required>
                   <input placeholder="e.g. Sarah" value={form.parentFirst} onChange={set("parentFirst")} {...inputProps} />
                 </Field>
@@ -186,7 +186,7 @@ export function ActivatePassPage() {
             {/* ── Section 4: Create Account ── */}
             <div style={{ padding: "36px 40px", borderBottom: "1px solid #f3f4f6" }}>
               {sectionHeader(4, "Create Your Login", "You'll use these to access your training")}
-              <div className="grid grid-cols-1 md:grid-cols-2" style={{ gap: 16 }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                 <Field label="Username" required>
                   <input placeholder="choose_a_username" value={form.username} onChange={set("username")} {...inputProps} />
                 </Field>

@@ -1,0 +1,154 @@
+/* responsive.css - Custom Media Queries for Mobile/Tablet Responsiveness */
+
+/* Tablet & Mobile (<= 1024px) */
+@media (max-width: 1024px) {
+
+    /* Hero Section */
+    .resp-hero-flex {
+        flex-direction: column !important;
+        gap: 48px !important;
+        text-align: center !important;
+        padding-top: 60px !important;
+    }
+
+    .resp-hero-content {
+        align-items: center !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .resp-hero-image-container {
+        width: 100% !important;
+        max-width: 600px !important;
+        margin: 0 auto !important;
+    }
+
+    /* Grids */
+    .resp-grid-2-to-1 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .resp-grid-3 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+
+    .resp-grid-4 {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    }
+
+    .resp-stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px !important;
+    }
+
+    /* Footer */
+    .resp-footer-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 48px !important;
+    }
+
+    /* Misc */
+    .resp-flex-wrap {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+}
+
+/* Mobile Only (<= 768px) */
+@media (max-width: 768px) {
+
+    /* Grids */
+    .resp-grid-1 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .resp-flex-col {
+        flex-direction: column !important;
+    }
+
+    .resp-flex-col-center {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    /* Text Sizes */
+    .resp-h1 {
+        font-size: clamp(36px, 10vw, 42px) !important;
+        line-height: 1.1 !important;
+        text-align: center !important;
+    }
+
+    .resp-h2 {
+        font-size: clamp(28px, 8vw, 36px) !important;
+        line-height: 1.15 !important;
+        text-align: center !important;
+    }
+
+    .resp-p-center {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .resp-center-flex {
+        justify-content: center !important;
+    }
+
+    /* Navigation */
+    .resp-nav-desktop {
+        display: none !important;
+    }
+
+    .resp-nav-mobile-btn {
+        display: block !important;
+    }
+
+    /* Forms */
+    .resp-newsletter-form {
+        flex-direction: column !important;
+    }
+
+    .resp-newsletter-btn {
+        width: 100% !important;
+        margin-top: 12px !important;
+    }
+
+    /* Padding adjustments */
+    .resp-section-padding {
+        padding: 64px 24px 80px !important;
+    }
+
+    .resp-hero-padding {
+        padding: 100px 24px 60px !important;
+    }
+
+    /* Miscellaneous */
+    .resp-hero-stats {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+        margin-top: 40px !important;
+        padding-top: 32px !important;
+    }
+
+    .resp-testimonial-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .resp-footer-col {
+        align-items: center !important;
+        text-align: center !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* Login / Game Panels */
+    .resp-panel-stack {
+        flex-direction: column !important;
+    }
+
+    .resp-panel {
+        width: 100% !important;
+        min-height: auto !important;
+        flex: none !important;
+    }
+}

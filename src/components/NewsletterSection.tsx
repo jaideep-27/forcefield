@@ -16,7 +16,7 @@ export function NewsletterSection() {
   };
 
   return (
-    <section style={{ padding: "90px 24px 160px", background: "#f1f6f0", position: "relative", overflow: "hidden" }}>
+    <section className="resp-section-padding" style={{ padding: "90px 24px 160px", background: "#f1f6f0", position: "relative", overflow: "hidden" }}>
       {/* Light decorative blobs */}
       <div style={{ position: "absolute", top: -60, right: -60, width: 280, height: 280, borderRadius: "50%", background: "radial-gradient(circle, rgba(35,138,213,0.06), transparent 70%)", pointerEvents: "none" }} />
       <div style={{ position: "absolute", bottom: -60, left: -60, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(35,138,213,0.05), transparent 70%)", pointerEvents: "none" }} />
@@ -38,7 +38,7 @@ export function NewsletterSection() {
           </span>
 
           {/* Heading */}
-          <h2 style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(26px, 3.5vw, 40px)", color: "#1f2933", marginBottom: 14, lineHeight: 1.15 }}>
+          <h2 className="resp-h2" style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(26px, 3.5vw, 40px)", color: "#1f2933", marginBottom: 14, lineHeight: 1.15 }}>
             Download Our Free{" "}
             <span style={{ color: "#238ad5" }}>Concussion Guide</span>
           </h2>
@@ -49,7 +49,7 @@ export function NewsletterSection() {
           </p>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row" style={{ gap: 10, maxWidth: 460, margin: "0 auto 14px" }}>
+          <form className="resp-newsletter-form" onSubmit={handleSubmit} style={{ display: "flex", gap: 10, maxWidth: 460, margin: "0 auto 14px", flexWrap: "wrap" }}>
             <input
               type="email" required placeholder="Enter your email address" value={email}
               onChange={(e) => setEmail(e.target.value)} disabled={isSubmitting}
@@ -58,6 +58,7 @@ export function NewsletterSection() {
               onBlur={(e) => (e.currentTarget.style.borderColor = "#e5e7eb")}
             />
             <button
+              className="resp-newsletter-btn"
               type="submit" disabled={isSubmitting}
               style={{ height: 50, padding: "0 28px", borderRadius: 12, background: "#238ad5", border: "none", color: "#ffffff", fontSize: 14, fontWeight: 700, fontFamily: "var(--font-body)", cursor: isSubmitting ? "not-allowed" : "pointer", opacity: isSubmitting ? 0.6 : 1, boxShadow: "0 6px 20px rgba(35,138,213,0.35)", whiteSpace: "nowrap", flexShrink: 0, transition: "background 0.25s, transform 0.2s" }}
               onMouseEnter={(e) => { if (!isSubmitting) { (e.currentTarget as HTMLButtonElement).style.background = "#1a78c2"; (e.currentTarget as HTMLButtonElement).style.transform = "translateY(-1px)"; } }}

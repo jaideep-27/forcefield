@@ -36,8 +36,8 @@ export function HeroSection() {
       {/* Diagonal stripe */}
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(60deg, transparent 65%, rgba(35,138,213,0.05) 100%)", pointerEvents: "none" }} />
 
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "140px 24px 80px", width: "100%", position: "relative", zIndex: 2 }}>
-        <div style={{ gap: 60, alignItems: "center" }} className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="resp-hero-padding" style={{ maxWidth: 1200, margin: "0 auto", padding: "140px 24px 80px", width: "100%", position: "relative", zIndex: 2 }}>
+        <div className="resp-grid-2-to-1 lg:grid-cols-2 grid-cols-1" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "center" }}>
 
           {/* Left content */}
           <div>
@@ -56,6 +56,7 @@ export function HeroSection() {
 
             {/* Headline */}
             <motion.h1
+              className="resp-h1 resp-p-center"
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.15 }}
               style={{ fontFamily: "var(--font-heading)", fontWeight: 500, fontSize: "clamp(42px, 5.5vw, 68px)", lineHeight: 1.05, color: "#ffffff", marginBottom: 24 }}
             >
@@ -66,6 +67,7 @@ export function HeroSection() {
 
             {/* Subhead */}
             <motion.p
+              className="resp-p-center"
               initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }}
               style={{ fontFamily: "var(--font-body)", fontSize: 18, lineHeight: 1.7, color: "rgba(255,255,255,0.88)", marginBottom: 36, maxWidth: 480 }}
             >
@@ -75,6 +77,7 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <motion.div
+              className="resp-center-flex"
               initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.45 }}
               style={{ display: "flex", gap: 14, flexWrap: "wrap", marginBottom: 40 }}
             >
@@ -116,6 +119,7 @@ export function HeroSection() {
 
             {/* Trust badge */}
             <motion.p
+              className="resp-center-flex"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.65 }}
               style={{ fontFamily: "var(--font-body)", fontSize: 13, color: "rgba(255,255,255,0.72)", display: "flex", alignItems: "center", gap: 8 }}
             >
@@ -174,9 +178,9 @@ export function HeroSection() {
 
         {/* Stats bar */}
         <motion.div
+          className="resp-hero-stats"
           initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.8 }}
-          className="grid grid-cols-2 md:grid-cols-4"
-          style={{ marginTop: 80, paddingTop: 48, borderTop: "1px solid rgba(255,255,255,0.08)", gap: 24 }}
+          style={{ marginTop: 80, paddingTop: 48, borderTop: "1px solid rgba(255,255,255,0.08)", display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 24 }}
         >
           {[
             { value: "500+", label: "Young Players" },

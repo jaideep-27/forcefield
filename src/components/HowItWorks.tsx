@@ -53,7 +53,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" style={{ padding: "100px 24px 160px", background: "#f1f6f0", position: "relative", overflow: "hidden" }}>
+    <section id="how-it-works" className="resp-section-padding" style={{ padding: "100px 24px 160px", background: "#f1f6f0", position: "relative", overflow: "hidden" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         <motion.div
           style={{ textAlign: "center", marginBottom: 72 }}
@@ -62,7 +62,7 @@ export function HowItWorks() {
           <span style={{ display: "inline-block", fontSize: 12, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "#238ad5", fontFamily: "var(--font-body)", marginBottom: 16 }}>
             Simple Process
           </span>
-          <h2 style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: "#1f2933", marginBottom: 20, lineHeight: 1.1 }}>
+          <h2 className="resp-h2" style={{ fontFamily: "var(--font-heading)", fontWeight: 700, fontSize: "clamp(32px, 4vw, 48px)", color: "#1f2933", marginBottom: 20, lineHeight: 1.1 }}>
             How Player Training Works
           </h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: 17, color: "#4b5563", maxWidth: 480, margin: "0 auto", lineHeight: 1.7 }}>
@@ -75,7 +75,7 @@ export function HowItWorks() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4" style={{ gap: 24 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 24 }}>
           {steps.map((step, i) => (
             <motion.div
               key={i}
